@@ -5,6 +5,7 @@ import CalorieTracker from "./components/CalorieTracker";
 import ExerciseTracker from "./components/ExerciseTracker";
 import LandingPage from "./components/LandingPage";
 import BottomNav from "./components/BottomNav";
+import ProgressPhotos from "./components/ProgressPhotos";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Route path="/weight" element={<WeightTracker />} />
           <Route path="/calories" element={<CalorieTracker />} />
           <Route path="/exercises" element={<ExerciseTracker />} />
+          <Route path="/progress-photos" element={<ProgressPhotos />} />{" "}
         </Routes>
         <BottomNav />
       </div>

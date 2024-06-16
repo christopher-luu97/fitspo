@@ -75,6 +75,13 @@ const LandingPage: React.FC = () => {
         >
           Track Exercises
         </Link>
+        <Link
+          to="/progress-photos"
+          className="bg-purple-500 text-white py-1 px-2 sm:py-2 sm:px-4 rounded hover:bg-purple-700"
+        >
+          View Progress Photos
+        </Link>{" "}
+        {/* Add the new button */}
       </div>
     </div>
   );

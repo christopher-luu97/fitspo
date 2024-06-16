@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const WeightTracker: React.FC = () => {
   const [weight, setWeight] = useState<number | null>(null);
@@ -35,6 +36,12 @@ const WeightTracker: React.FC = () => {
           ))}
         </ul>
       </div>
+      <Link
+        to="/progress-photos"
+        className="mt-4 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-700 inline-block"
+      >
+        View Progress Photos
+      </Link>
     </div>
   );
 };
