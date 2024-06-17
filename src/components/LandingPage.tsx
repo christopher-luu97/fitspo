@@ -13,7 +13,7 @@ const LandingPage: React.FC = () => {
     metricsData[timeframe];
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center p-4 sm:p-8 text-center">
+    <div className="min-h-screen flex flex-col justify-center items-center p-4 sm:p-8 text-center bg-gray-900 text-white">
       <h1 className="text-3xl sm:text-4xl font-bold mb-4">
         Welcome to FitTrack
       </h1>
@@ -30,8 +30,8 @@ const LandingPage: React.FC = () => {
             }
             className={`px-2 py-1 sm:px-4 sm:py-2 rounded ${
               timeframe === tf
-                ? "bg-blue-500 text-white"
-                : "bg-gray-200 text-black"
+                ? "bg-blue-600 text-white"
+                : "bg-gray-700 text-white"
             } hover:bg-blue-700`}
           >
             {tf.charAt(0).toUpperCase() + tf.slice(1)}
@@ -50,7 +50,7 @@ const LandingPage: React.FC = () => {
           goal={exerciseGoal}
           reached={exerciseDone}
         />
-        <div className="bg-white shadow p-4 rounded-lg">
+        <div className="bg-gray-800 shadow p-4 rounded-lg">
           <h2 className="text-xl sm:text-2xl font-semibold">Steps</h2>
           <p>{steps} steps</p>
         </div>
@@ -59,29 +59,28 @@ const LandingPage: React.FC = () => {
       <div className="flex space-x-2 sm:space-x-4 mt-8">
         <Link
           to="/weight"
-          className="bg-blue-500 text-white py-1 px-2 sm:py-2 sm:px-4 rounded hover:bg-blue-700"
+          className="bg-blue-600 text-white py-1 px-2 sm:py-2 sm:px-4 rounded hover:bg-blue-700"
         >
           Track Weight
         </Link>
         <Link
           to="/calories"
-          className="bg-green-500 text-white py-1 px-2 sm:py-2 sm:px-4 rounded hover:bg-green-700"
+          className="bg-green-600 text-white py-1 px-2 sm:py-2 sm:px-4 rounded hover:bg-green-700"
         >
           Track Calories
         </Link>
         <Link
           to="/exercises"
-          className="bg-red-500 text-white py-1 px-2 sm:py-2 sm:px-4 rounded hover:bg-red-700"
+          className="bg-red-600 text-white py-1 px-2 sm:py-2 sm:px-4 rounded hover:bg-red-700"
         >
           Track Exercises
         </Link>
         <Link
           to="/progress-photos"
-          className="bg-purple-500 text-white py-1 px-2 sm:py-2 sm:px-4 rounded hover:bg-purple-700"
+          className="bg-purple-600 text-white py-1 px-2 sm:py-2 sm:px-4 rounded hover:bg-purple-700"
         >
           View Progress Photos
-        </Link>{" "}
-        {/* Add the new button */}
+        </Link>
       </div>
     </div>
   );
